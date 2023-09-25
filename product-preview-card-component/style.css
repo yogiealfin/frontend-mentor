@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+:root {
+  --clr-primary: hsl(158, 36%, 37%);
+  --clr-secondary: hsl(30, 38%, 92%);
+  --clr-neutral-dark: hsl(212, 21%, 14%);
+  --clr-neutral-gray: hsl(228, 12%, 48%);
+  --clr-neutral-white: hsl(0, 0%, 100%);
+  --clr-primary-darker: hsl(158, 36%, 20%);
+  --ff-base: "Montserrat", sans-serif;
+  --ff-accent: "Fraunces", serif;
+  --fw-regular: 500;
+  --fw-bold: 700;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: var(--ff-base);
+  font-size: 14px;
+  background-color: var(--clr-secondary);
+  color: var(--clr-neutral-gray);
+  line-height: 1.5;
+  display: grid;
+  place-content: center;
+  margin: 15px;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+p,
+h1 {
+  overflow-wrap: break-word;
+}
+
+.card {
+  background-color: var(--clr-neutral-white);
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 600px;
+  display: grid;
+}
+
+@media (min-width: 600px) {
+  .card {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.content-container {
+  padding: 25px;
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.product-category {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 0.75rem;
+}
+
+.product-name {
+  font-family: var(--ff-accent);
+  color: var(--clr-neutral-dark);
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.price-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-family: var(--ff-accent);
+  gap: 1rem;
+}
+
+.discount-price {
+  color: var(--clr-primary);
+  font-size: 2rem;
+  font-weight: var(--fw-bold);
+}
+
+.original-price {
+  text-decoration: line-through;
+  font-weight: var(--fw-regular);
+}
+
+.button {
+  cursor: pointer;
+  background-color: var(--clr-primary);
+  color: var(--clr-neutral-white);
+  padding: 16px 24px;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-weight: var(--fw-bold);
+  font-size: 0.9rem;
+}
+
+.button:is(:hover, :focus) {
+  background-color: var(--clr-primary-darker);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
