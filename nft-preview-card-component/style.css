@@ -56,14 +56,42 @@ svg {
   align-items: stretch;
 }
 
+picture {
+  position: relative;
+  cursor: pointer;
+}
+
 .card-image {
   border-radius: 8px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  transition: all 0.3s ease;
+  background-color: var(--clr-secondary);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+picture:hover .overlay {
+  opacity: 0.6;
 }
 
 .card-title {
   color: var(--clr-neutral-white);
   font-size: 1.375rem;
   font-weight: var(--fw-bold);
+}
+
+.card-title:hover {
+  cursor: pointer;
+  color: var(--clr-secondary);
 }
 
 .card-description {
@@ -109,6 +137,11 @@ svg {
 
 .highlight {
   color: var(--clr-neutral-white);
+}
+
+.highlight:hover {
+  cursor: pointer;
+  color: var(--clr-secondary);
 }
 
 .attribution {
