@@ -56,7 +56,7 @@ svg {
   align-items: stretch;
 }
 
-picture {
+.picture {
   position: relative;
   cursor: pointer;
 }
@@ -79,7 +79,7 @@ picture {
   align-items: center;
 }
 
-picture:hover .overlay {
+.picture:hover .overlay {
   opacity: 0.6;
 }
 
