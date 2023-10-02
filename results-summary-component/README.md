@@ -9,7 +9,7 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 ### Links
 
 - Solution URL: (https://github.com/yogiealfin/frontend-mentor/tree/main/results-summary-component)
-- Live Site URL: (https://yogiealfin.github.io/frontend-mentor/result-summary-component/)
+- Live Site URL: (https://yogiealfin.github.io/frontend-mentor/results-summary-component/)
 
 ### Built with
 
